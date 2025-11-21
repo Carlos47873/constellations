@@ -22,3 +22,6 @@ El objetivo es recrear con precisión el diseño de Figma, incluyendo:
 > - Solo se permite **HTML + CSS puro**  
 > - No se pueden usar frameworks (Bootstrap, Tailwind, etc.)  
 > - No se debe usar JavaScript
+# nombre de integrantes y codigo 
+edwin jose contreras.192648
+carlos daniel ascanio ortiz.192627

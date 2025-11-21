@@ -1,4 +1,3 @@
-/* aca iran todos los estilos */
 
 * {
     margin: 0;
@@ -8,7 +7,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(180deg, #0a0e27 0%, #1a1a3e 30%, #0f1a2e 60%, #050810 100%);
+    background: linear-gradient(180deg, #050810 0%, #0a0e1f 30%, #0a1428 60%, #05101f 100%);
     color: #e0e0e0;
     min-height: 100vh;
     overflow-x: hidden;
@@ -23,12 +22,10 @@ body {
     max-width: 1200px;
 }
 
-/* Main Content */
 .main-content {
     width: 100%;
 }
 
-/* Header Section */
 .header-section {
     text-align: center;
     margin-bottom: 50px;
@@ -53,7 +50,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Content Box with Gradient Border */
+
 .content-box {
     position: relative;
     display: grid;
@@ -63,17 +60,17 @@ body {
     background: linear-gradient(135deg, rgba(10, 14, 39, 0.8) 0%, rgba(20, 20, 50, 0.6) 100%);
     border-radius: 12px;
     
-    /* Gradient border effect */
+ 
     background-clip: padding-box;
     border: 3px solid transparent;
     background-image: 
         linear-gradient(135deg, rgba(10, 14, 39, 0.8) 0%, rgba(20, 20, 50, 0.6) 100%),
-        linear-gradient(135deg, #00d9ff 0%, #c800ff 50%, #00d9ff 100%);
+        linear-gradient(135deg, #1b2122 0%, #161819 50%, #161819 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
 
-/* Form Section */
+
 .form-section {
     display: flex;
     flex-direction: column;
@@ -98,6 +95,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .form-row {
@@ -108,7 +107,7 @@ body {
 
 .form-input {
     background: rgba(30, 30, 50, 0.5);
-    border: 1px solid #444;
+    border: 1px solid #bdafaf;
     border-radius: 6px;
     padding: 12px 14px;
     color: #d0d0d0;
@@ -118,7 +117,7 @@ body {
 }
 
 .form-input::placeholder {
-    color: #777;
+    color: #f6ecec;
 }
 
 .form-input:focus {
@@ -139,7 +138,7 @@ textarea.form-input {
 }
 
 .submit-button {
-    background: linear-gradient(135deg, #6b2fbf 0%, #c800ff 100%);
+    background: linear-gradient(135deg, #711ee4 0%, #c800ff 100%);
     border: none;
     color: #ffffff;
     padding: 14px 24px;
@@ -151,6 +150,13 @@ textarea.form-input {
     margin-top: 8px;
 }
 
+.submit-button .rocket {
+    display: inline-block;
+    margin-left: 8px;
+    transform: scaleY(-1) rotate(90deg);
+}
+
+
 .submit-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(200, 0, 255, 0.4);
@@ -160,7 +166,6 @@ textarea.form-input {
     transform: translateY(0);
 }
 
-/* Image Section */
 .image-section {
     display: flex;
     flex-direction: column;
@@ -168,7 +173,7 @@ textarea.form-input {
 }
 
 .image-placeholder {
-    border: 3px dotted rgba(10, 150, 255, 0.85);
+    border: 3px solid #161819  ;
     border-radius: 8px;
     padding: 40px;
     background-image: url(/assets/astronauta.png);
@@ -183,7 +188,7 @@ textarea.form-input {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* centrado clásico como antes */
+    object-position: center;
     display: block;
 }
 
@@ -206,7 +211,6 @@ textarea.form-input {
     margin: 0 6px 6px 6px;
 }
 
-/* pequeña mejora para el autor */
 .image-quote strong {
     display: block;
     margin-top: 8px;
@@ -214,7 +218,6 @@ textarea.form-input {
     font-weight: 700;
 }
 
-/* Media Queries */
 @media (max-width: 1024px) {
     .content-box {
         grid-template-columns: 1fr;
